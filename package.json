@@ -7,7 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "bin": "./bin.js",
   "repository": {
@@ -28,18 +30,17 @@
   "bugs": {
     "url": "https://github.com/ohlsont/json-flow/issues"
   },
-  "homepage": "https://github.com/ohlsont/json-to-flow#readme",
+  "homepage": "https://ohlsont.github.com/json-flow",
   "dependencies": {
     "commander": "^2.9.0",
     "material-ui": "^0.17.1",
     "oboe": "^2.1.2",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "react-scripts": "^0.9.5"
-  },
-  "peerDependencies": {
-    "react-tap-event-plugin": "^2.0.1"
   }
 }
