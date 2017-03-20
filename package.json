@@ -4,7 +4,10 @@
   "description": "Transform JSON into flow type annotations automatically",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "bin": "./bin.js",
   "repository": {
@@ -14,6 +17,7 @@
   "keywords": [
     "json",
     "json-to-flow",
+    "flow-generator",
     "flow",
     "flowtype",
     "node",
@@ -22,11 +26,20 @@
   "author": "Johnydays",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johnydays/json-flow/issues"
+    "url": "https://github.com/ohlsont/json-flow/issues"
   },
-  "homepage": "https://github.com/johnydays/json-to-flow#readme",
+  "homepage": "https://github.com/ohlsont/json-to-flow#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "oboe": "^2.1.2"
+    "material-ui": "^0.17.1",
+    "oboe": "^2.1.2",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^0.9.5"
+  },
+  "peerDependencies": {
+    "react-tap-event-plugin": "^2.0.1"
   }
 }
