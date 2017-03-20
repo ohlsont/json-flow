@@ -11,10 +11,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "bin": "./bin.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnydays/json-flow.git"
+    "url": "git+https://github.com/ohlsont/json-flow.git"
   },
   "keywords": [
     "json",

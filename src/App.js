@@ -71,8 +71,24 @@ class App extends Component {
         }
     }
 
-    isValid(str) {
-        return this.isJsonString(str) || this.isURL(str)
+    renderGithubStar() {
+        return <div>
+            <a className="github-button"
+               href="https://github.com/ohlsont/json-flow"
+               data-style="mega" data-count-href="/ohlsont/json-flow/stargazers"
+               data-count-api="/repos/ohlsont/json-flow#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub" aria-label="Star ohlsont/json-flow on GitHub"
+            >
+                Star
+            </a>
+            <a href="https://github.com/ohlsont/json-flow">
+                <img style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
+                     src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
+                     alt="Fork me on GitHub"
+                     data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
+                />
+            </a>
+        </div>
     }
 
     render() {
@@ -85,6 +101,7 @@ class App extends Component {
                         <img src={logo} className="App-logo" alt="logo" />
                         <h2>JSON -> FlowType</h2>
                         <h3>Paste valid json or url to json and get a flow type object</h3>
+                        {this.renderGithubStar()}
                     </div>
                     <TextField
                         style={{ textAlign: 'left', width: '40em' }}
